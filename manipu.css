@@ -1,0 +1,124 @@
+h1{
+   text-align: center;
+}
+
+h1{
+animation: 8s color 1s linear infinite alternate;
+font-size: 900;
+}
+
+@keyframes color{
+    0%{
+        color: rgb(240, 89, 89);
+    }
+    10%{
+        color: rgb(87, 206, 245);
+    }
+    20%{
+        color: rgb(108, 245, 87);
+    }
+    30%{
+        color: rgb(87, 211, 245);
+    }
+    40%{
+        color: rgb(245, 87, 158);
+    }
+    50%{
+        color: rgb(87, 87, 245);
+    }
+    60%{
+        color: rgb(92, 245, 87);
+    }
+    70%{
+        color: rgb(224, 245, 87);
+    }
+    80%{
+        color: rgb(200, 245, 87);
+    }
+    90%{
+        color: rgb(117, 221, 118);
+    }
+    100%{
+        color: rgb(253, 35, 209);
+    }
+
+}
+
+h4{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.level{
+animation: 1s ease-in-out level ;
+}
+@keyframes level{
+ 0%{
+    transform:translateY(10px);
+ }
+ 100%{
+    transform: translateY(-10px);
+ }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.red{
+    background-color: rgb(237, 81, 81);
+}
+.yellow{
+    background-color: rgb(245, 245, 92);
+}
+
+.green{
+    background-color: rgb(107, 152, 248);
+}
+
+.purple{
+    background-color: rgb(243, 103, 243);
+}
+
+.btn{
+   height: 150px;
+   width: 150px;
+   border-radius: 20px;
+   border: 5px solid lightblue;
+   cursor: pointer;
+   transition: transform 0.1s,
+               border-color 0.2s,
+               box-shadow 0.3s;
+}
+
+.btn:hover{
+    transform : scale(1.05);
+    border-color : grey;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.btn:active{
+    transform:scale(0.99);
+}
+
+.gamflash{
+    background-color: white;
+}
+
+.useflash{
+    background-color: rgb(90, 238, 90);
+}
+
+.wrongFlash{
+    background-color: red;
+}
